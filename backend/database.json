@@ -42,5 +42,95 @@
             "id": 2,
             "title": "Jornada GetX"
         }
+    ],
+    "alunos": [
+        {
+            "id": 0,
+            "nome": "Caio Gugê",
+            "idade": 20,
+            "nomeCursos": [
+                "Academia Flutter",
+                "Jornada GetX",
+                "Jornada Clean Code"
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada GetX",
+                    "isAluno": true
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": true
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 200,
+                "CEP": "13402342",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Piracicaba"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "numero": "999152386"
+                }
+            }
+        },
+        {
+            "id": 1,
+            "nome": "Nathaly Gugê",
+            "idade": 37,
+            "nomeCursos": [
+                "Academia Flutter"
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada GetX",
+                    "isAluno": false
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": false
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua Y",
+                "numero": 190,
+                "CEP": "13402342",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Piracicaba"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "numero": "40028922"
+                }
+            }
+        }
     ]
 }
