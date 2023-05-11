@@ -1,20 +1,20 @@
-import 'package:consumo_api/models/cursos.dart';
+import 'package:consumo_api/models/curso.dart';
 import 'package:consumo_api/models/endereco.dart';
 
-class Alunos {
+class Aluno {
   int id;
   String nome;
   int? idade;
   List<String> nomeCursos;
-  List<Cursos> curso;
+  List<Curso> cursos;
   Endereco endereco;
 
-  Alunos({
+  Aluno({
     required this.id,
     required this.nome,
     this.idade,
     required this.nomeCursos,
-    required this.curso,
+    required this.cursos,
     required this.endereco,
   });
 }

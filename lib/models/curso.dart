@@ -1,9 +1,9 @@
-class Cursos {
+class Curso {
   int id;
   String nome;
   bool isAluno;
 
-  Cursos({
+  Curso({
     required this.id,
     required this.nome,
     required this.isAluno,
