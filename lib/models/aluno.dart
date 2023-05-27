@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:consumo_api/models/curso.dart';
 import 'package:consumo_api/models/endereco.dart';
 
@@ -17,4 +18,40 @@ class Aluno {
     required this.cursos,
     required this.endereco,
   });
+
+  Map<String, dynamic> toMap() {
+    final map = <String, dynamic>{
+      'id': id,
+      'nome': nome,
+      'nomeCursos': nomeCursos,
+      'cursos': cursos.map((cursos) => cursos.toMap()).toList(),
+      'endereco': endereco.toMap(),
+    };
+
+    if (idade != null) {
+      map['idade'] = idade;
+    }
+
+    return map;
+  }
+
+  String toJson() => jsonEncode(toMap());
+
+  factory Aluno.fromMap(Map<String, dynamic> map) {
+    return Aluno(
+      id: map['id'] ?? 0,
+      nome: map['nome'] ?? '',
+      idade: map['idade'],
+      nomeCursos: List<String>.from(map['nomeCursos']),
+      endereco: Endereco.fromMap(map['endereco'] ?? <String, dynamic>{}),
+      //Conversão para o tipo Curso.
+      //Caso o curso venha vazio, eu converto para uma lista vazia.
+      cursos: map['cursos']
+              ?.map<Curso>((cursoMap) => Curso.fromMap(cursoMap))
+              .toList() ??
+          <Curso>[],
+    );
+  }
+
+  factory Aluno.fromJson(String json) => Aluno.fromMap(jsonDecode(json));
 }

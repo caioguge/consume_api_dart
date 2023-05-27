@@ -37,8 +37,8 @@ class Telefone {
 
   factory Telefone.fromMap(Map<String, dynamic> map) {
     return Telefone(
-      ddd: map['ddd'],
-      numero: map['numero'],
+      ddd: map['ddd'] ?? 0,
+      numero: map['numero'] ?? '',
     );
   }
 }
