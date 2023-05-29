@@ -11,7 +11,7 @@
 
 ## 💻 About the project
 
-Consume API - Was a module in **Academia do Flutter** ministered by the professor **Rodrigo Rahman**, who taught us how to consume an API, (in this case, an API created by us, the students). The comments in this project is in Português-Br, however you can search for the traslation later.
+Consume API - Was a module in **Academia do Flutter** ministered by the professor **Rodrigo Rahman**, who taught us how to consume an API, (in this case, an API created by us, the students). The comments in this project is in Portuguese-BR, however you can search for the traslation later.
 
 
 The entire project was desenvolved in the dart console.
