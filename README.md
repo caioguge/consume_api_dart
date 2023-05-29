@@ -24,7 +24,7 @@ https://instituto.academiadoflutter.com.br/
 
 ## 🚀 How to execute
 
-### Pre requirements
+### Requirements
 
 Before starting, you will need to have the Git tool installed on your machine:
 [Install Git](https://git-scm.com).
